@@ -1,0 +1,407 @@
+html{
+ -webkit-text-size-adjust:auto;
+ -moz-text-size-adjust:auto;
+ -o-text-size-adjust:auto;
+}
+
+.nullflow{
+	overflow: hidden;
+}
+
+::-webkit-scrollbar{
+	width: 1.2vmin; 
+	border-left:1px solid #fff;
+}
+
+::-webkit-scrollbar-track{
+	background: #455A64;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #f44336;
+}
+
+::selection{
+	background: #91ccff;
+	color: #455A64;
+}
+
+body, html{
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+	width: 100vw;
+	height: 10vh;
+	background: #eee;
+	position: fixed;
+	z-index: 10;
+	transition: 300ms;
+}
+
+.section-hero{
+	background: url('bg.jpg') no-repeat;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: left center;
+}
+
+.intro-text{
+	position: absolute;
+	left: 50%;
+	top: 38%;
+	transform: translate(-50%, -50%);
+	font-size: 7vmin;
+	font-family: 'Ubuntu', sans-serif;
+	color: #FF715B;
+}
+
+.logo{
+	transition: 500ms;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #FF715B;
+	font-size: 4vmin;
+	font-family: inherit;
+}
+
+.explore{
+	width: 15vw;
+	height: 15vh;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	border: 5px solid #ff715b;
+	-webkit-transition: 300ms  cubic-bezier(.55,0,.1,1);
+}
+
+.explore:hover{
+	-webkit-transition: 300ms  cubic-bezier(.55,0,.1,1);
+	box-shadow: inset 0 15vh 0 0 #ff715b;
+}
+
+.explore-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4vmin;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+}
+
+.about{
+	position: absolute;
+	width: 100vw;
+	height: 120vh;
+	background-color: #FF715B;
+	top: 100vh;
+	font-family: inherit;
+}
+
+.heading{
+	color: #fff;
+	font-size: 8vmin;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 350;
+	font-family: inherit;
+}
+
+.about-heading{
+	top: 33%;
+}
+
+.appear{
+	width: 20%;
+	animation: app 300ms;
+}
+
+@keyframes app{
+	0%{width: 0%; opacity: 0;}
+	50%{width: 10%; opacity: 0.5;}
+	100%{width: 20%; opacity: 1;}
+}
+
+.about-line{
+	transition: 300ms cubic-bezier(0.8,0.6,0.2,0);
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	background-color: #fff;
+	border: 0 solid;
+	transform: translate(-50%, -50%);
+	height: 0.2%;
+}
+
+.about-sub-text{
+	color: #fff;
+	font-size: 4vmin;
+	font-family: inherit;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: 300;
+	font-style: normal;
+	padding-bottom: 8vw;
+}
+
+
+.portfolio{
+	position: absolute;
+	top: 205vh;
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+}
+
+.heading-theme{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -50%);
+	font-size: 8vmin;
+	font-family: inherit;
+	color: #FF715B;
+}
+
+.port-line{
+	transition: 300ms cubic-bezier(0.8,0.6,0.2,0);
+	position: absolute;
+	height: 0.2%;
+	top: 25%;
+	left: 50%;
+	background-color: #FF715B;
+	border: 0 solid;
+	transform: translate(-50%, -50%);
+}
+
+.contact-line{
+	transition: 300ms cubic-bezier(0.8,0.6,0.2,0);
+	height: 0.2%;
+	border: 0 solid;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	background-color: #fff;
+}
+
+.portfolio .row{
+	position: absolute;
+}
+
+.row2{
+	position: absolute;
+	top: 40%;
+}
+
+.img{
+	top: 39vh;
+	position: absolute;
+	width: 25vw;
+	background-size: contain;
+	height: 45vh;
+	background-color: #222;
+	transition: 200ms cubic-bezier(0.6, 0.4, 0.2, 0);
+}
+
+.img1{
+	left: 0vw;
+	background: url('1.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.img2{
+	left: 25vw;
+	background: url('2.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.img3{
+	left: 50vw;
+	background: url('3.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.img4{
+	left: 75vw;
+	background: url('4.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.img5{
+	left: 0vw;
+	background: url('5.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.img6{
+	left: 25vw;
+	background: url('6.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.img7{
+	left: 50vw;
+	background: url('7.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.img8{
+	left: 75vw;
+	background: url('8.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.gallery{
+	position: absolute;
+	width: 75vw;
+	height: 80vh;
+	z-index: -5;
+	top: 60%;
+	left: 50%;
+	background-size: cover;
+	transition: 500ms;
+	transform: translate(-50%, -50%);
+}
+
+.popup{
+	z-index: 10;
+	box-shadow: 0 0 2vw 100vw #333;
+}
+
+.img:hover{
+	box-shadow: inset 0 0 5vw 25vw  #FF715B;
+	color: #fff;
+	opacity: 1;
+	transition: 200ms cubic-bezier(0.6, 0.4, 0.2, 0);
+}
+
+.img-title{
+	color: #fff;
+	opacity: 0;
+	transition: 100ms;
+	font-size: 3.2vmin;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.color-add{
+	opacity: 1;
+	color: #fff;
+}
+
+
+.contact{
+	position: absolute;
+	width: 100vw;
+	height: 90vh;
+	background-color: #FF715B;
+	top: 325vh;
+}
+
+.contact-subtext{
+	color: #fff;
+	font-size: 4vmin;
+	font-family: inherit;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.subtext-p1{
+		top: 60%;
+}
+
+.subtext-p2{
+		top: 70%;
+}
+
+.subtext-p3{
+		top: 80%;
+}
+
+/*
+
+.sign-off{
+	background: #263238;
+	position: absolute;
+	top: 415vh;
+	width: 100vw;
+	height: 110vh;
+	letter-spacing: 1vmin;
+}
+
+.so-heading{
+	position: absolute;
+	left: 50%;
+	font-size: 10vmin;
+	color: #fff;
+	padding-top: 15%;
+	opacity: 0;
+	transition: 500ms ease-out;
+	transform: translate(-50%, -50%);
+}
+
+.so-heading-active{
+	transition: 500ms ease-out;
+	padding-top: 30%!important;
+	opacity: 1!important;
+}
+
+.ba-bye-fa{
+	opacity: 0;
+	transition: 300ms;
+}
+
+*/
+
+@media(max-width: 767px){	
+
+.intro-text{
+	font-size: 5vmin;
+}
+
+.explore{
+	width: 20vw;
+}
+
+.explore-text{
+	font-size: 2.8vmin;
+}
+
+.about-sub-text{
+	color: #fff;
+	font-size: 3.5vmin;
+	font-family: inherit;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: 300;
+	font-style: normal;
+	margin-bottom: 12vh;
+}
+
+}
