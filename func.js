@@ -5,26 +5,26 @@ $('.explore').click(function(){
 	})
 
 $(window).scroll(function(){	
-	var b=$('body').scrollTop();
+	var b=$('html, body').scrollTop();
 	var h=$('#section1').offset().top;
 	var a=$('#section2').offset().top;
 	var p=$('#section3').offset().top;
 	var c=$('#section4').offset().top-80;
-		if(b<a){
-			$('.logo').text("Dewansh Rawat")
-		}
-		else if(b>=a && b<p){
-			$('.logo').text("About")
-			$('.about-line').addClass('appear')
-		}
-		else if(b>=p && b<c){
-			$('.logo').text("Portfolio")
-			$('.port-line').addClass('appear')
-		}
-		else if(b>=c){
-			$('.logo').text("Contact Me")
-			$('.contact-line').addClass('appear')
-		}
+	if(b<a){
+		$('.logo').text("Dewansh Rawat")
+	}
+	else if(b>=a && b<p){
+		$('.logo').text("About")
+		$('.about-line').addClass('appear')
+	}
+	else if(b>=p && b<c){
+		$('.logo').text("Portfolio")
+		$('.port-line').addClass('appear')
+	}
+	else if(b>=c){
+		$('.logo').text("Contact Me")
+		$('.contact-line').addClass('appear')
+	}
    })
 
 	$('.img1').hover(function(){
@@ -58,6 +58,7 @@ $(window).scroll(function(){
 			'background-image': 'url(1.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 	$('.img2').click(function(){
 		$('.gallery').addClass('popup')
@@ -65,6 +66,7 @@ $(window).scroll(function(){
 			'background-image': 'url(2.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 	$('.img3').click(function(){
 		$('.gallery').addClass('popup')
@@ -72,6 +74,7 @@ $(window).scroll(function(){
 			'background-image': 'url(3.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 	$('.img4').click(function(){
 		$('.gallery').addClass('popup')
@@ -79,6 +82,7 @@ $(window).scroll(function(){
 			'background-image': 'url(4.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 	$('.img5').click(function(){
 		$('.gallery').addClass('popup')
@@ -86,6 +90,7 @@ $(window).scroll(function(){
 			'background-image': 'url(5.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 	$('.img6').click(function(){
 		$('.gallery').addClass('popup')
@@ -93,6 +98,7 @@ $(window).scroll(function(){
 			'background-image': 'url(6.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 	$('.img7').click(function(){
 		$('.gallery').addClass('popup')
@@ -100,6 +106,7 @@ $(window).scroll(function(){
 			'background-image': 'url(7.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 	$('.img8').click(function(){
 		$('.gallery').addClass('popup')
@@ -107,6 +114,7 @@ $(window).scroll(function(){
 			'background-image': 'url(8.jpg)'
 		})
 		$('body').addClass('nullflow')
+		alert('Click esc button to exit')
 	})
 
 	$('.gallery').click(function(){
@@ -119,13 +127,8 @@ $(window).scroll(function(){
 			var x=e.keyCode;
 			if(x===27){
 			$('.gallery').removeClass('popup')
-		$('body').removeClass('nullflow')
+				$('body').removeClass('nullflow')
 			}
-			else if(x===38){
-				$('.gallery').css({
-					'background-image': 'url(1.jpg)'
-				})
-			}
-	})
+		})
    })
 })
